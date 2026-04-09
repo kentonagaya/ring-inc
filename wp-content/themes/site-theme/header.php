@@ -4,7 +4,7 @@
 ---------------------------------------------------------------------------*/
 	include ("assets/settings/site-config.php");
 ?>
-<body id="<?php echo CURRENTDIR;?>-body" class="<?php echo switch_ua('','','drawer drawer--top');?>">
+<body id="<?php echo CURRENTDIR;?>-body" class="drawer drawer--top">
 <?php if( is_home() && $top_loading == true ):?>
 <script>
 	$(window).load(function(){
@@ -31,46 +31,43 @@
 		<section class="header-wrap <?php if($scroll_changebg == true){ echo 'scroll-change-headerbg'; }?> <?php echo switch_ua('pc-header','pc-header','');?>"><!-- header-wrap -->
 			<div class="site-header fullwidth"><!-- site-header -->
 
-				<div class="mod-header-gnav"><!-- mod-header-scroll-cc -->
+				<div class="mod-header-gnav"><!-- mod-header-gnav -->
 					<div class="logo-part">
 						<p class="header-logo">
 							<a href="<?php bloginfo('url'); ?>/<?php echo $top_dir;?>">
 								<?php if( CURRENTDIR == 'top' && is_pc() | is_tb() && $gnav_pos !== 'header-fixed' && $scroll_changebg == true ):?>
 									<img src="<?php bloginfo('template_url'); ?>/images/header-logo-white.svg" alt="<?php echo $site_name;?>">
 								<?php else:?>
-								<img src="<?php bloginfo('template_url'); ?>/images/header-logo-normal.svg" alt="<?php echo $site_name;?>">
-				<?php endif;?>
+									<img src="<?php bloginfo('template_url'); ?>/images/header-logo-normal.svg" alt="<?php echo $site_name;?>">
+								<?php endif;?>
 							</a>
 						</p>
+						<h1 class="header-company-name"><a href="<?php bloginfo('url'); ?>/<?php echo $top_dir;?>">株式会社リング</a></h1>
 					</div>
 
-					
-					<div class="modules-part">
 					<div class="modules-part">
 
-						<div class="modules-part">
+						<?php if( $header_type == 'gnav' ): ?>
+							<div class="row gnav-part">
+								<nav class="mod-gnav-in-header">
+									<?php include ("assets/settings/sitemap.php");?>
+								</nav>
+							</div>
+						<?php endif;?>
 
-							<?php if( $header_type == 'gnav' ): ?>
-								<div class="row gnav-part">
-									<nav class="mod-gnav-in-header">
-										<?php include ("assets/settings/sitemap.php");?>
-									</nav>
-								</div>
-							<?php endif;?>
+						<?php if( $header_type == 'standard' ): ?>
+							<div class="row mod-header-phone">
+								<p class="phone-number font-designed fa-before"><i class="fas fa-phone"></i><?php echo $phone_num_1;?></p>
+								<p class="opentime">営業時間：<?php echo $open_time_1;?><?php echo $close_day_1;?></p>
+							</div>
+						<?php endif;?>
 
-							<?php if( $header_type == 'standard' ): ?>
-								<div class="row mod-header-phone">
-									<p class="phone-number font-designed fa-before"><i class="fas fa-phone"></i><?php echo $phone_num_1;?></p>
-									<p class="opentime">営業時間：<?php echo $open_time_1;?><?php echo $close_day_1;?></p>
-								</div>
-							<?php endif;?>
-
-								<div class="row contact-part">
-									<a href="<?php bloginfo('url'); ?>/contact/" class="button fa-before"><i class="fas fa-envelope"></i>お問い合わせ</a>
-								</div>
+						<div class="row contact-part">
+							<a href="<?php bloginfo('url'); ?>/contact/" class="button fa-before"><i class="fas fa-envelope"></i>お問い合わせ</a>
 						</div>
-					
-				</div><!-- // mod-header-scroll-cc -->
+					</div><!-- // modules-part -->
+
+				</div><!-- // mod-header-gnav -->
 			</div><!-- // site-header -->
 
 		</section><!-- // header-wrap -->
@@ -93,7 +90,6 @@
 		</section><!-- // gnav-wrap -->
 <?php endif;?>
 
-<?php if( is_sp() ){ ?>
 <script>
 	$(function() {
 		$(document).ready(function() {
@@ -124,6 +120,5 @@
 
 		</div>
 
-<?php };?>
-
 	</header>
+

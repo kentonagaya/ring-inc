@@ -133,6 +133,17 @@ body {
 				display: none;
 			}
 		}
+
+		.header-company-name {
+			font-size: 1.4rem;
+			font-weight: bold;
+			margin: 0;
+			line-height: 1.2;
+
+			@include sp {
+				font-size: 1.1rem;
+			}
+		}
 	}
 
 	.modules-part {

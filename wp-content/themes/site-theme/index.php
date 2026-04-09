@@ -91,8 +91,8 @@
 
 					<!--<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title font-designed center">ABOUT</h1>
-							<p class="subtitle center">テンプレート概要</p>
+							<p class="header-title font-designed center">ABOUT</p>
+							<h2 class="subtitle center">テンプレート概要</h2>
 						</div>
 					</div>-->
 
@@ -103,7 +103,7 @@
 							</div>
 							<div class="right-column item-eq-height">
 								<div class="column-inner">
-									<h3 class="heading03">地域密着型<br>一人一人の個性に合わせて一貫したサポートを</h3>
+									<h4 class="heading03">地域密着型<br>一人一人の個性に合わせて一貫したサポートを</h4>
 									<p class="text">大阪府下、京都・兵庫などの私立病院への医師・管理医師・看護師・薬剤師、他医療有資格者の有料職業紹介事業を行っております。
 													職業紹介希望の皆様には、実際お会いして経験や経歴、ご要望等を全てお伺いし、年収アップ、ミスマッチのない最適な職場をご紹介しています。</p>
 								</div>
@@ -126,8 +126,8 @@
 
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title font-designed center">SERVICE</h1>
-							<p class="subtitle center">事業案内</p>
+							<p class="header-title font-designed center">SERVICE</p>
+							<h2 class="subtitle center">事業案内</h2>
 						</div>
 					</div>
 
@@ -137,7 +137,7 @@
 								<li class="list-cont">
 									<div class="list-inner texts">
 										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-resources.jpg" alt="人材紹介"></p>
-										<h2 class="heading04 center">人材紹介</h2>
+										<h3 class="heading04 center">人材紹介</h3>
 										<p class="mb30 item-eq-height">豊富な情報力をもって有能で即戦力となる人材をご紹介致します。企業様の経営方針や採用状況を理解し、事業戦略に沿う候補者をご紹介させて頂きます。</p>
 										<p class="section-more center"><a href="<?php bloginfo('url');?>/resources/" class="button">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
 									</div>
@@ -145,7 +145,7 @@
 								<li class="list-cont">
 									<div class="list-inner texts">
 										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-nursinghome.jpg" alt="高齢者トータルサポート"></p>
-										<h2 class="heading04 center">高齢者トータルサポート</h2>
+										<h3 class="heading04 center">高齢者トータルサポート</h3>
 										<p class="mb30 item-eq-height">医療現場で勤務経験のある専門スタッフが在住しており、専門的な相談が可能です。お客様のニーズに応じて心安らぐ、最適な施設のご紹介をさせて頂きます。</p>
 										<p class="section-more center"><a href="<?php bloginfo('url');?>/nursinghome/" class="button">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
 									</div>
@@ -153,7 +153,7 @@
 								<li class="list-cont">
 									<div class="list-inner texts">
 										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-realestate.jpg" alt="不動産紹介事業"></p>
-										<h2 class="heading04 center">不動産紹介事業</h2>
+										<h3 class="heading04 center">不動産紹介事業</h3>
 										<p class="mb30 item-eq-height">経験豊富なスタッフが一人一人のニーズに合わせてきめ細やかな対応でサポート致します。売りたい時、買いたい時。貸したい時、借りたい時。その間に立ち、皆さまに満足していただける安心で安全な取引をかなえます。</p>
 										<p class="section-more center"><a href="<?php bloginfo('url');?>/realestate/" class="button mbcut">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
 									</div>
@@ -177,8 +177,8 @@
 
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title font-designed center">NEWS</h1>
-							<p class="subtitle center">お知らせ</p>
+							<p class="header-title font-designed center">NEWS</p>
+							<h2 class="subtitle center">お知らせ</h2>
 						</div>
 					</div>
 
@@ -222,7 +222,7 @@
 											</div>
 											<div class="texts-cont texts">
 												<p class="date"><time datetime="<?php the_time('Y-m-d');?>"><?php the_time('Y.m.d');?></time></p>
-												<h3 class="arc-title"><?php the_title();?></h3>
+												<h4 class="arc-title"><?php the_title();?></h4>
 												<div class="text">
 													<?php the_excerpt();?>
 												</div>

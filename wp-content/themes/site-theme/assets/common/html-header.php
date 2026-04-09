@@ -89,9 +89,7 @@ if( CURRENTDIR == 'top' and $page_org_title == '' ) {
 <?php echo $css;?>
 <?php //wp_deregister_script('jquery'); // WPのjqueryとの競合回避 ?>
 <?php wp_head(); ?>
-<?php if( is_sp() ){ ?>
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/lib/drawer.css">
-<?php };?>
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css">
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/lib/fontawesome/css/all.min.css">
 <script src="https://kit.fontawesome.com/20d944a9b2.js" crossorigin="anonymous"></script>
