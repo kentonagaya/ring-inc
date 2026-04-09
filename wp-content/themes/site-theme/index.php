@@ -144,16 +144,16 @@
 								</li>
 								<li class="list-cont">
 									<div class="list-inner texts">
-										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-nursinghome.jpg" alt="老人ホーム紹介"></p>
-										<h2 class="heading04 center">老人ホーム紹介</h2>
+										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-nursinghome.jpg" alt="高齢者トータルサポート"></p>
+										<h2 class="heading04 center">高齢者トータルサポート</h2>
 										<p class="mb30 item-eq-height">医療現場で勤務経験のある専門スタッフが在住しており、専門的な相談が可能です。お客様のニーズに応じて心安らぐ、最適な施設のご紹介をさせて頂きます。</p>
 										<p class="section-more center"><a href="<?php bloginfo('url');?>/nursinghome/" class="button">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
 									</div>
 								</li>
 								<li class="list-cont">
 									<div class="list-inner texts">
-										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-realestate.jpg" alt="不動産仲介"></p>
-										<h2 class="heading04 center">不動産仲介</h2>
+										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-realestate.jpg" alt="不動産紹介事業"></p>
+										<h2 class="heading04 center">不動産紹介事業</h2>
 										<p class="mb30 item-eq-height">経験豊富なスタッフが一人一人のニーズに合わせてきめ細やかな対応でサポート致します。売りたい時、買いたい時。貸したい時、借りたい時。その間に立ち、皆さまに満足していただける安心で安全な取引をかなえます。</p>
 										<p class="section-more center"><a href="<?php bloginfo('url');?>/realestate/" class="button mbcut">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
 									</div>

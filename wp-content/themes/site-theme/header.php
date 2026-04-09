@@ -25,8 +25,8 @@
 
 <?php
 	// スクロールでヘッダーの背景色を変更
-	$scroll_changebg = true;
-	//$scroll_changebg = false;
+	//$scroll_changebg = true;
+	$scroll_changebg = false;
 ?>
 		<section class="header-wrap <?php if($scroll_changebg == true){ echo 'scroll-change-headerbg'; }?> <?php echo switch_ua('pc-header','pc-header','');?>"><!-- header-wrap -->
 			<div class="site-header fullwidth"><!-- site-header -->

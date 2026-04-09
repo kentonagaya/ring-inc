@@ -15,7 +15,7 @@
 	/* ページ設定 */
 	define( 'CURRENTDIR', 'nursinghome' );	// ディレクトリ名
 	define( 'CURRENTPAGE', 'index' );	// ページ名
-	$dirname 		= '老人ホーム紹介';
+	$dirname 		= '高齢者トータルサポート';
 	$subtitle 		= 'NURSING HOME';
 
 	/* ページ専用CSS */

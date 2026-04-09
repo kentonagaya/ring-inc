@@ -15,7 +15,7 @@
 	/* ページ設定 */
 	define( 'CURRENTDIR', 'realestate' );	// ディレクトリ名
 	define( 'CURRENTPAGE', 'index' );	// ページ名
-	$dirname 		= '不動産仲介';
+	$dirname 		= '不動産紹介事業';
 	$subtitle 		= 'REALESTATE ';
 
 	/* ページ専用CSS */
@@ -127,7 +127,7 @@
 			<section class="page-section bg-light" id="realestate-flow">
 				<div class="contents block">
 					<div class="part">
-						<h3 class="heading01 center">不動産仲介の流れ</h3>
+						<h3 class="heading01 center">不動産紹介事業の流れ</h3>
 					</div>
 					<div class="mod-flow-box">
 						<div class="mod-image-texts">
