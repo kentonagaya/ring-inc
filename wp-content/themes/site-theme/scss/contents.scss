@@ -1,0 +1,977 @@
+@charset "utf-8";
+/*
+contents.css
+v4.0.0
+Last Updated: 2018-05-19
+Author: Yoshiharu Terajima - http://endesign-factory.com
+*/
+@import "./settings/settings";
+/*------------------------------
+	%heading
+------------------------------*/
+
+.catchphrase {
+	margin-bottom: 50px;
+	font-size: 2.8rem;
+	line-height: 1.5em;
+	@include sp {
+		margin-bottom: 20px;
+		font-size: 2.0rem;
+	}
+}
+
+.heading01 {
+	margin-bottom: 50px;
+	font-size: 3.4rem;
+	line-height: 1.5em;
+	@include sp {
+		margin-bottom: 15px;
+		font-size: 2.0rem;
+	}
+}
+
+.heading02 {
+	margin-bottom: 30px;
+	font-size: 2.6rem;
+	line-height: 1.3em;
+	@include sp {
+		margin-bottom: 12px;
+		font-size: 2.0rem;
+	}
+}
+
+.heading03 {
+	margin-bottom: 20px;
+	font-size: 2.0rem;
+	font-weight: bold;
+	line-height: 1.3em;
+	@include sp {
+		margin-bottom: 10px;
+		font-size: 1.4rem;
+	}
+}
+
+.heading04 {
+	margin-bottom: 15px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1.3em;
+	@include sp {
+		margin-bottom: 10px;
+		font-size: 1.3rem;
+	}
+}
+
+.heading05 {
+	margin-bottom: 20px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 1.3em;
+	@include sp {
+		margin-bottom: 10px;
+		font-size: 1.2rem;
+	}
+}
+
+.contents-header {
+	margin-bottom: 30px;
+	text-align: center;
+	@include sp {
+		margin-bottom: 15px;
+	}
+	h1, h2, h3 {
+		margin-bottom: 5px;
+		line-height: 1.3em;
+		font-size: 2.8rem;
+		color: $main-color;
+		@include sp {
+			font-size: 1.8rem;
+		}
+	}
+	.sub-title {
+		line-height: 1.3rem;
+		font-size: 1.4rem;
+		@include sp {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.white-text {
+	color: #fff;
+	.heading01,
+	.heading02,
+	.heading03,
+	.heading04,
+	.heading05,
+	.mod-contents-header h1,
+	.mod-contents-header h2,
+	.mod-contents-header h3,
+	.mod-contents-header .subtitle,
+	.texts p,
+	p.text {
+		color: #fff;
+	}
+	a {
+		color: #fff;
+		&:hover {
+			opacity: 0.75;
+			filter: alpha(opacity=75);
+		}
+	}
+	a.button.bc-ghost {
+		color: #fff;
+		border: 1px solid #fff;
+	}
+}
+
+a.disp-block {
+	display: block;
+	text-decoration: none;
+	&:hover {
+		color: $text-color;
+	}
+}
+
+/*------------------------------
+	%blocks
+------------------------------*/
+
+.hgroup {
+	@include sp {
+		padding: 0 10px;
+	}
+}
+
+.block,
+.area {
+	margin-bottom: $block-mb;
+	@include sp {
+		padding: 0 10px;
+		margin-bottom: $sp-block-mb;
+		box-sizing: border-box;
+	}
+}
+
+.box {
+	margin-bottom: $block-mb;
+	@include sp {
+		margin-bottom: $sp-block-mb;
+	}
+}
+
+.part {
+	margin-bottom: $part-mb;
+	@include sp {
+		margin-bottom: $sp-part-mb;
+	}
+}
+
+// cover
+
+.cover {
+	padding: 20px;
+	border: 1px solid $deep-color;
+}
+
+// bg-cover
+
+.bg-cover {
+	background-size: cover;
+	background-position: center center;
+}
+
+.bg-atfix {
+	background-attachment: fixed;
+	@include sp {
+		background-attachment: scroll;
+	}
+}
+
+// radius
+
+.radius {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+// 円
+.oval {
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+// 文字枠
+.outline {
+	text-shadow:
+		1px  1px 0px #ffffff,
+		-1px  1px 0px #ffffff,
+		1px -1px 0px #ffffff,
+		-1px -1px 0px #ffffff,
+		1px  0px 0px #ffffff,
+		0px  1px 0px #ffffff,
+		-1px  0px 0px #ffffff,
+		0px -1px 0px #ffffff;
+}
+
+// アスペクト比固定
+
+.aspect-fix-wrap,
+.aspect-fix-wrap-even {
+	position: relative;
+	width: 100%;
+}
+.aspect-fix-wrap:before {
+	content:"";
+	display: block;
+	padding-top: 56.25%; /* 高さを幅の100%に固定 */
+}
+.aspect-fix-wrap-even:before {
+	content:"";
+	display: block;
+	padding-top: 100%; /* 高さを幅の100%に固定 */
+}
+
+.aspect-fix {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+// 天地中央（子要素に指定）
+.vertical-center {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+// 天地中央（親要素に指定）
+.vh-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// フェード
+.fadeInDown {
+	-webkit-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	animation-duration:1s;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+	0% { opacity: 0; -webkit-transform: translateY(100px); }
+	100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+	0% { opacity: 0; -webkit-transform: translateY(100px); -ms-transform: translateY(100px); transform: translateY(100px); }
+	100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+//トランジション
+.transition {
+	-webkit-transition: all 0.8s ease;
+	   -moz-transition: all 0.8s ease;
+	     -o-transition: all 0.8s ease;
+	        transition: all 0.8s ease;
+}
+
+//背景に薄い色
+.bg-light {
+	background-color: $light-color;
+}
+.has-side {
+	.bg-light {
+		background-color: transparent;
+	}
+}
+
+/*--------------------------------------------------------
+	%texts
+--------------------------------------------------------*/
+
+.texts p,
+p.text {
+	line-height: 2.0em;
+	margin-bottom: $pic-mb;
+	@include sp {
+		font-size: 1.2rem !important;
+	}
+}
+
+.texts ul li,
+ul.text li {
+	margin: 0 0 10px 0;
+	line-height: 1.8em;
+	position: relative;
+	padding-left: 10px;
+	@include sp {
+		font-size: 1.2rem !important;
+	}
+}
+
+.texts ul li:before,
+ul.text li:before {
+	content: '';
+	width: 3px;
+	height: 3px;
+	display: inline-block;
+	border-radius: 100%;
+	background: $main-color;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.contents-container.has-side {
+	.texts ul li,
+	ul.text li {
+		font-size: 1.4rem;
+	}
+
+}
+
+.texts ol li,
+ol.text li {
+	margin: 0 0 0 20px;
+	padding: 0 0 0;
+	list-style: decimal outside;
+	line-height: 1.5em;
+}
+
+.texts p em,
+p.texts em {
+	color: $accent-color;
+	font-weight: bold;
+}
+
+.caution {
+	color: $accent-color;
+}
+
+.caption {
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.3em;
+	@include sp {
+		font-size: 1.1rem !important;
+	}
+}
+
+.texts p a,
+p.text a {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.supple {
+	font-size: 78%;
+}
+
+.wm-vertical {
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+}
+
+.mbcut {
+	margin-bottom: 0 !important;
+}
+
+.mrcut {
+	margin-right: 0 !important;
+}
+
+.pic {
+	margin-bottom: $pic-mb;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	a:hover {
+		img {
+			opacity: 0.75;
+			filter: alpha(opacity=75);
+		}
+	}
+}
+
+.fig {
+	img {
+		max-width: 100%;
+	}
+}
+
+.btn {
+	text-align: center;
+	img {
+		max-width: 100%;
+	}
+	a:hover {
+		img {
+			opacity: 0.75;
+			filter: alpha(opacity=75);
+		}
+	}
+}
+
+.pic.item-eq-height {
+	background-size: cover;
+	background-position: center center;
+	@include sp {
+		height: 200px;
+	}
+}
+
+.caption {
+	padding: 0 5px 0 15px;
+	font-size: 1.2rem;
+	line-height: 1.2em;
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 5px;
+		display: block;
+		width: 10px;
+		height: 10px;
+		content:'\f0d8';
+		font-family: 'Font Awesome 5 Free';
+		color: $main-color;
+		font-weight: bold;
+	}
+}
+
+.frame01 {
+	padding: 4px;
+	background: #ffffff;
+	border: 1px solid $deep-color;
+	img {
+		vertical-align: bottom;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.tx-icon {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 5px 15px;
+	background: $accent-color;
+	color: #fff;
+	font-size: 1.2rem;
+	vertical-align: middle;
+	@include sp {
+		padding: 4px 10px;
+		font-size: 1.0rem;
+		/*
+		display: block;
+		margin: 0 0 5px 0;
+		text-align: center;
+		*/
+	}
+}
+a.tx-icon {
+	&:hover {
+		background: darken( $accent-color, 10% );
+		color: #fff;
+	}
+}
+
+a.cat-icon {
+	margin-right: 10px;
+	padding: 5px 15px;
+	background: $accent-color;
+	color: #fff;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	font-size: 1.2rem;
+	vertical-align: middle;
+	text-decoration: none;
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+		opacity: 0.75;
+		filter: alpha(opacity=75);
+	}
+	@include sp {
+		padding: 4px 10px;
+		font-size: 1.0rem;
+		/*
+		display: block;
+		margin: 0 0 5px 0;
+		text-align: center;
+		*/
+	}
+}
+
+br.sp-br {
+	display: none;
+	@include sp {
+		display: block;
+	}
+}
+
+br.pc-br {
+	@include sp {
+		display: none;
+	}
+}
+
+i.fa, i.fas, i.far, i.fal, i.fab {
+	margin-right: 10px;
+}
+
+a.ref {
+	display: inline-block;
+	text-decoration: none;
+	&::before {
+		margin-right: 10px;
+		content: '\f0a4';
+		font-family: 'Font Awesome 5 Free';
+		font-weight: bold;
+	}
+}
+
+.huge {
+	font-size: 128%;
+}
+
+.more-huge {
+	font-size: 114%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/*------------------------------
+	%flex
+------------------------------*/
+
+.flex {
+	display: flex;
+}
+
+.flex-center { // 天地中央にしたい要素の親要素に指定
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*------------------------------
+	%image
+------------------------------*/
+
+.btn {
+	a {
+		img {
+			&:hover {
+				opacity: 0.75;
+				filter: alpha(opacity=75);
+			}
+		}
+	}
+}
+
+/*------------------------------
+	%align
+------------------------------*/
+
+.center {
+	text-align: center;
+}
+
+.vertical-center {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/*------------------------------
+	%buttons
+------------------------------*/
+
+a.button,
+input.button {
+//	        border-radius: 5px;
+//	   -moz-border-radius: 5px;
+//	-webkit-border-radius: 5px;
+	display: inline-block;
+	padding: 15px 30px;
+	color: $button-textcolor;
+	text-decoration: none;
+	background-color: $button-bgcolor;
+	text-align: center;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	line-height: 1.0em;
+	@include sp {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	&:hover {
+		color: $button-textcolor-hover;
+		background-color: $button-bgcolor-hover;
+	}
+	&.bc-white {
+		color: $accent-color;
+		background-color: #fff;
+		&:hover {
+			background-color: lighten( $accent-color, 40% );
+		}
+	}
+	&.bc-ghost {
+		color: $main-color;
+		background-color: transparent;
+		border: 1px solid $main-color;
+		&:hover {
+			opacity: 0.75;
+			filter: alpha(opacity=75);
+		}
+	}
+	&.bc-ghost.bc-white {
+		color: #fff;
+		border: 1px solid #fff;
+		&:hover {
+			background: transparent !important;
+			opacity: 0.75;
+			filter: alpha(opacity=75);
+		}
+	}
+	&.btn-small {
+		padding: 5px 15px;
+		font-size: 1.2rem;
+	}
+
+	i.fa, i.fas, i.far, i.fal, i.fab {
+		margin: 0 0 0 10px;
+	}
+}
+
+input.button {
+	border: none;
+	display: inline-block;
+	//padding: 12px 30px;
+}
+
+.form-buttons {
+	input.button, a.button {
+		margin: 0 5px;
+		vertical-align: bottom;
+		@include sp {
+			margin: 0 0 10px 0;
+		}
+	}
+}
+
+.texts p,
+p.text {
+	a.button {
+		line-height: 1.0em;
+	}
+}
+
+/*--------------------------------------------------------
+	%table
+--------------------------------------------------------*/
+
+table {
+	width: 100%;
+	th, td {
+		padding: 12px;
+		line-height: 1.5em;
+		@include sp {
+			display: block;
+			font-size: 1.2rem !important;
+		}
+	}
+	th {
+		text-align: left;
+		white-space: nowrap;
+	}
+}
+
+// サイドバーありの場合のフォントサイズ
+.contents-container.has-side {
+	table {
+		th, td {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+table.mod-table01 {
+	th, td {
+		border: 1px solid $deep-color;
+	}
+	th {
+		@include sp {
+			border-bottom: none;
+		}
+	}
+	th {
+		font-weight: bold;
+		background: $light-color;
+	}
+}
+
+table.mod-table02 {
+	border-top: 2px solid $deep-color;
+	th, td {
+		border-bottom: 1px solid $deep-color;
+	}
+	th {
+		font-weight: bold;
+	}
+}
+@include sp {
+	.mod-matrix-table {
+		overflow: auto;
+		white-space: nowrap;
+		table {
+			th, td {
+				display: table-cell;
+			}
+		}
+		table.mod-matrix-table.table01 {
+			th {
+				border-bottom: 1px solid $deep-color;
+			}
+		}
+	}
+	.mod-matrix-table::-webkit-scrollbar{
+		height: 5px;
+	}
+	.mod-matrix-table::-webkit-scrollbar-track{
+		background: #F1F1F1;
+	}
+	.mod-matrix-table::-webkit-scrollbar-thumb {
+		background: #BCBCBC;
+	}
+}
+
+/*--------------------------------------------------------
+	%dl (定義リスト)
+--------------------------------------------------------*/
+
+// サイドバーありの場合のフォントサイズ
+.contents-container.has-side {
+	dl {
+		dt, dd {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+dl.mod-dl0 {
+	dt, dd {
+		padding: 5px 5px 0 5px;
+		box-sizing: border-box;
+		line-height: 1.5em;
+		@include sp {
+			padding: 5px 0;
+		}
+	}
+	dt {
+		width: 15%;
+		float: left;
+		font-weight: bold;
+		@include sp {
+			float: none;
+			width: 100%;
+		}
+	}
+	dd {
+		margin-left: 15%;
+		@include sp {
+			margin: 0;
+		}
+	}
+	dd:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+
+dl.mod-dl01 {
+	background: $light-color;
+	border-right: 1px solid $deep-color;
+	border-bottom: 1px solid $deep-color;
+	border-left: 1px solid $deep-color;
+	dt, dd {
+		padding: 10px 15px 0 15px;
+		border-top: 1px solid $deep-color;
+		box-sizing: border-box;
+		line-height: 1.5em;
+		@include sp {
+			padding: 10px 15px;
+		}
+	}
+	dt {
+		width: 15%;
+		float: left;
+		font-weight: bold;
+		@include sp {
+			float: none;
+			width: 100%;
+		}
+	}
+	dd {
+		background: #fff;
+		margin-left: 15%;
+		padding-bottom: 10px;
+		border-left: 1px solid $deep-color;
+		@include sp {
+			margin: 0;
+			border-left: none;
+		}
+	}
+	dd:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+dl.mod-dl02 {
+	border-bottom: 1px solid $deep-color;
+	dt, dd {
+		padding: 10px 10px 0 10px;
+		border-top: 1px solid $deep-color;
+		box-sizing: border-box;
+		line-height: 1.5em;
+		@include sp {
+			padding: 10px;
+		}
+	}
+	dt {
+		width: 15%;
+		float: left;
+		font-weight: bold;
+		@include sp {
+			float: none;
+			width: 100%;
+			background: $light-color;
+		}
+	}
+	dd {
+		margin-left: 15%;
+		padding-bottom: 10px;
+		@include sp {
+			margin: 0;
+		}
+	}
+	dd:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+/*--------------------------------------------------------
+	%single-article
+--------------------------------------------------------*/
+
+.page-title {
+	@include sp {
+		padding: 0 10px;
+	}
+}
+
+article.single-article {
+	p {
+		margin-bottom: 20px;
+	}
+	h1 {
+		margin-bottom: 10px;
+		font-size: 3.2rem;
+		font-weight: bold;
+		line-height: 1.5em;
+		color: $main-color;
+		@include sp {
+			font-size: 2.2rem;
+		}
+	}
+	h2 {
+		margin-bottom: 10px;
+		font-size: 2.4rem;
+		font-weight: bold;
+		line-height: 1.5em;
+		color: $main-color;
+		@include sp {
+			font-size: 1.8rem;
+		}
+	}
+	h3 {
+		margin-bottom: 10px;
+		font-size: 1.8rem;
+		font-weight: bold;
+		line-height: 1.5em;
+		color: $main-color;
+		@include sp {
+			font-size: 1.6rem;
+		}
+	}
+	h4 {
+		margin-bottom: 10px;
+		font-size: 1.6rem;
+		font-weight: bold;
+		line-height: 1.5em;
+		@include sp {
+			font-size: 1.4rem;
+		}
+	}
+	h5 {
+		margin-bottom: 10px;
+		font-size: 1.4rem;
+		font-weight: bold;
+		line-height: 1.5em;
+	}
+	h6 {
+		margin-bottom: 6px;
+		font-size: 1.3rem;
+		font-weight: bold;
+		line-height: 1.5em;
+	}
+	strong {
+		font-weight: bold;
+	}
+	.texts p em,
+	.texts em {
+		font-style: italic;
+		color: $accent-color !important;
+	}
+	blockquote {
+		padding: 15px;
+		background: $light-color;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+}

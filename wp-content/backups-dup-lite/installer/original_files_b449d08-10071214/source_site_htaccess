@@ -1,0 +1,54 @@
+# 常時SSL化
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# .htaccessの保護
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+
+# ディレクトリ表示の禁止
+Options -Indexes
+
+# 攻撃されやすいファイルのアクセス制限
+<FilesMatch "^(wp-config\.php)">
+order allow,deny
+deny from all
+</FilesMatch>
+
+# 特定のホストへpinbackを送るのを防ぐ
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^xmlrpc\.php$ "http\:\/\/0\.0\.0\.0\/" [R=301,L]
+</IfModule>
+
+# WebP対応
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{SCRIPT_FILENAME}.webp -f
+  RewriteRule .(jpe?g|png|gif)$ %{SCRIPT_FILENAME}.webp [T=image/webp]
+</IfModule>
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+</IfModule>
+<IfModule mod_setenvif.c>
+  SetEnvIf Request_URI "\.(jpe?g|png|gif)$" _image_request
+</IfModule>
+<IfModule mod_headers.c>
+  Header append Vary Accept env=_image_request
+</IfModule>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /wp-11/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wp-11/index.php [L]
+</IfModule>
+# END WordPress

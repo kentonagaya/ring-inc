@@ -1,0 +1,391 @@
+@charset "utf-8";
+/*
+structures.css
+v4.0.0
+Last Updated: 2018-05-19
+Author: Yoshiharu Terajima - http://endesign-factory.com
+*/
+@import "./settings/settings";
+
+html {
+	margin-top: 0 !important;
+	#wpadminbar {
+		display: none;
+	}
+}
+/*------------------------------
+	%loader
+------------------------------*/
+.loading {
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20000;
+}
+.loading img {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+/*------------------------------
+	%basic-structure
+------------------------------*/
+
+body {
+	font-family:-apple-system, BlinkMacSystemFont, Lato, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background-color: $body-color;
+	color: $text-color;
+	a {
+		color: $link-color;
+		text-decoration: $link-decoration;
+		&:hover {
+			color: lighten( $link-color, 30% );
+		}
+	}
+	object a {
+		text-decoration: none;
+	}
+}
+
+.container {
+	overflow: hidden;
+
+	.site-header,
+	.gnav,
+	.contents,
+	.site-footer {
+		margin: 0 auto;
+		width: $content-width;
+
+		@include sp {
+			width: 100%;
+		}
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.fullwidth {
+		width: 100%;
+	}
+
+	.narrow-contents {
+		width: $narrow-content-width;
+		@include sp {
+			width: 100%;
+		}
+	}
+
+}
+
+/*------------------------------
+	%header
+------------------------------*/
+
+#page-header.header-fix {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+.site-header {
+
+	padding: 0 20px;
+	box-sizing: border-box;
+	background: $header-bgcolor;
+
+	.logo-part {
+		display: flex;
+		float: left;
+		align-items: center;
+		height: $header-height;
+
+		@include sp {
+			height: $sp-header-height;
+		}
+
+		.header-logo {
+			margin-right: 20px;
+			img {
+				height: 30px;
+
+				@include sp {
+					height: 20px;
+				}
+			}
+		}
+
+		.header-intro {
+			font-size: 1.2rem;
+
+			@include sp {
+				display: none;
+			}
+		}
+	}
+
+	.modules-part {
+		float: right;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		height: $header-height;
+
+		.row {
+			margin-left: 30px;
+
+			a.button {
+				i.fas {
+					margin: 0 10px 0 0;
+				}
+			}
+		}
+
+		.misc-part {
+			a i {
+				font-size: 2.0rem;
+			}
+		}
+
+		@include sp {
+			display: none;
+		}
+	}
+}
+
+/*------------------------------
+	%gnav
+------------------------------*/
+
+.gnav-wrap {
+	background: $gnav-wrap-bgcolor;
+	position: relative;
+	z-index: 100;
+
+	@include sp {
+		display: none;
+	}
+
+	&.fixed {
+		position: fixed;
+		top: $header-height;
+		left: 0;
+		right: 0;
+	}
+}
+
+/*--------------------------------------------------------
+	%promotion
+--------------------------------------------------------*/
+
+.promo-wrap {
+	width: 100%;
+	background-color: #eee;
+	@include sp {
+		margin-top: $sp-header-height;
+	}
+}
+
+.promo-wrap.fixed {
+	padding-top: $gnav-height;
+	@include sp {
+		padding-top: 0;
+	}
+}
+
+// GNがheader固定の場合
+.promo-wrap.fixed.header-fixed {
+	padding-top: 0;
+	@include sp {
+		margin-top: 0;
+	}
+}
+// GNがpromo直下でない場合
+.promo-wrap.fixed.non-promo-fixed {
+	padding-top: 0;
+}
+
+
+/*------------------------------
+	%title
+------------------------------*/
+
+.title-wrap.header-fix {
+	margin-top: $header-height;
+	@include sp {
+		margin-top: $sp-header-height;
+	}
+}
+
+.title-wrap.header-fix.has-gnav {
+	margin-top: $header-height + $gnav-height;
+	@include sp {
+		margin-top: $sp-header-height;
+	}
+}
+
+/*------------------------------
+	%breadcrumb
+------------------------------*/
+
+.breadcrumb-wrap {
+	border-bottom: 1px solid $deep-color;
+	background: #fff;
+}
+
+/*------------------------------
+	%contents
+------------------------------*/
+
+.contents-wrap {
+
+	.page-section {
+		padding: $content-padding 0;
+		@include sp {
+			padding: $sp-content-padding 0;
+		}
+	}
+
+	&.has-side {
+		margin: 0 auto;
+		padding: $content-padding 0;
+		width: $content-width;
+
+		.page-section {
+			padding: 0;
+		}
+
+		@include sp {
+			padding: $sp-content-padding 0;
+			width: 100%;
+
+		}
+
+		main {
+			float: left;
+			width: $main-width;
+
+			@include sp {
+				float: none;
+				width: 100%;
+			}
+
+			.contents {
+				width: $main-width;
+
+				@include sp {
+					width: 100%;
+				}
+			}
+		}
+
+		aside {
+			float: right;
+			width: $aside-width;
+
+			@include sp {
+				padding: 0 10px;
+				float: none;
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			.fixedmenu {
+				width: $aside-width;
+				@include sp {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+}
+
+/*------------------------------
+	%side
+------------------------------*/
+
+.side-contents {
+	margin-bottom: 40px;
+}
+
+.heading-side {
+	padding: 15px 0;
+	text-align: center;
+	font-weight: bold;
+	color: $sub-color;
+}
+
+/*------------------------------
+	%footer
+------------------------------*/
+
+.footer-wrap {
+	padding: $footer-padding 0;
+	background: $footer-bgcolor;
+	color: $footer-textcolor;
+}
+
+.copyright-wrap {
+	padding: 10px 0;
+	background: $copyright-bgcolor;
+	small {
+		color: $copyright-textcolor;
+		font-size: 1.2rem;
+		line-height: 1.2em;
+		@include sp {
+			font-size: 1.0rem;
+		}
+	}
+}
+
+// pagetop
+.pagetop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+	@include sp {
+		bottom: 60px;
+	}
+	a {
+		display: block;
+		padding: 15px 16px;
+		background: $main-color;
+		border-radius: 100px;
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+		border: 2px solid #fff;
+		@include sp {
+			opacity: 0.4;
+			border: none;
+		}
+		i.fas {
+			margin: 0;
+			font-size: 15px;
+			color: #fff;
+		}
+	}
+}
+
+/*------------------------------
+	%clearfix
+------------------------------*/
+
+.site-header::after,
+.has-side::after {
+	content: "";
+	display: table;
+	clear: both;
+}

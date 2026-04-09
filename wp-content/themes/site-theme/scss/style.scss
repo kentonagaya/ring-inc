@@ -1,0 +1,361 @@
+@charset "utf-8";
+/*
+style.css
+v4.0.0
+Last Updated: 2018-05-19
+Author: Yoshiharu Terajima - http://endesign-factory.com
+*/
+
+/*------------------------------
+	%include
+------------------------------*/
+@import "./lib/reset";
+@import "./settings/settings";
+@import "structures";
+@import "modules";
+@import "contents";
+
+/*------------------------------
+	%fonts
+------------------------------*/
+
+$font-mincho: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN",
+  "HG明朝E", serif;
+
+.font-mincho {
+  font-family: $font-mincho;
+}
+
+// Roboto Condensed
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700");
+$font-desingned: "Roboto Condensed", sans-serif;
+
+// Noto Sans JP（極太）
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:900");
+$font-desingned2: "Noto Sans JP", sans-serif;
+
+/*
+
+// Mosterrat
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+$font-desingned: 'Montserrat', sans-serif;
+
+// Anton
+@import url('https://fonts.googleapis.com/css?family=Anton');
+$font-desingned: 'Anton', sans-serif;
+
+// Noto Sans JP（太）
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:700');
+$font-desingned: 'Noto Sans JP', sans-serif;
+
+// Noto Sans JP（極太）
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:900');
+$font-desingned: 'Noto Sans JP', sans-serif;
+
+*/
+
+.font-designed {
+  font-family: $font-desingned;
+}
+
+.font-designed2 {
+  font-family: $font-desingned2;
+}
+
+/*------------------------------
+	%index
+------------------------------*/
+
+#top-body {
+  .section-more {
+    a.button {
+      padding: 20px;
+      font-size: 1.8rem;
+      width: 400px;
+      text-align: center;
+      box-sizing: border-box;
+      @include sp {
+        width: 100%;
+      }
+    }
+  }
+
+  // header 設定
+
+  #page-header.gn-header-fix {
+    .header-wrap {
+      color: $text-color;
+      background: $header-bgcolor;
+      .mod-gnav-in-header {
+        a {
+          color: $text-color;
+        }
+      }
+      .misc-part {
+        a {
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .header-wrap {
+    color: #fff;
+    .site-header {
+      background: $header-bgcolor-top;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+      @include sp {
+        background: $header-bgcolor;
+      }
+      .mod-gnav-in-header {
+        a {
+          color: #fff;
+        }
+      }
+      .misc-part {
+        a {
+          color: #fff;
+        }
+      }
+      &.bg-normal {
+        background: $header-bgcolor;
+        color: $text-color;
+
+        .mod-gnav-in-header {
+          a {
+            color: $text-color;
+          }
+        }
+
+        .misc-part {
+          a {
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
+
+  #top-intro {
+  }
+
+  #top-features {
+  }
+
+  #top-service {
+    background-image: url(../images/top/bg-intro.jpg);
+  }
+
+  #top-news {
+  }
+
+  #top-instagram {
+    ul#instafeed {
+      li {
+        float: left;
+        width: 25%;
+        a {
+          display: block;
+          background-size: cover;
+          background-position: center center;
+          &:hover {
+            opacity: 0.75;
+            filter: alpha(opacity=75);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------
+	%news
+--------------------------------------------------------*/
+
+#news-single-container {
+  article {
+    .date {
+      margin-bottom: 20px;
+      color: #888;
+      font-size: 1.2rem;
+    }
+    .fig {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------
+	%weblog
+--------------------------------------------------------*/
+
+#weblog-single-container {
+  article {
+    .date {
+      margin-bottom: 20px;
+      color: #888;
+      font-size: 1.2rem;
+    }
+    .fig {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .comment-respond {
+    .comment-reply-title {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .comment-form {
+      padding: 20px;
+      //background: #222;
+      background: #fff;
+      .logged-in-as {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #bbb;
+        a {
+          color: #bbb;
+        }
+      }
+      .comment-form-comment {
+        label {
+          display: none;
+        }
+        textarea {
+          width: 100%;
+          margin-bottom: 20px;
+          background: #fff;
+          color: #666;
+          border: none;
+          padding: 15px;
+          box-sizing: border-box;
+          border: 1px solid $deep-color;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+        }
+      }
+      .form-submit {
+        text-align: center;
+        .submit {
+          display: inline-block;
+          padding: 5px 30px;
+          background: $main-color !important;
+          color: #fff !important;
+          border: none;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          font-size: 1.4rem;
+          @include sp {
+            width: 100%;
+            box-sizing: border-box;
+          }
+        }
+      }
+      #email-notes {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #222;
+      }
+      .comment-form-author,
+      .comment-form-email,
+      .comment-form-url {
+        margin-bottom: 10px;
+        label {
+          display: inline-block;
+          width: 9em;
+          @include sp {
+            margin-bottom: 10px;
+          }
+        }
+        input {
+          border: none;
+          background: #fff;
+          border: 1px solid $deep-color;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          color: #222;
+          padding: 5px;
+          width: calc(100% - 10em);
+          box-sizing: border-box;
+          @include sp {
+            width: 100%;
+            box-sizing: border-box;
+          }
+        }
+      }
+      .comment-notes {
+        margin-bottom: 10px;
+        color: #d0021b;
+        font-size: 1.2rem;
+      }
+      .required {
+        color: #d0021b;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------
+	%company
+--------------------------------------------------------*/
+
+#company-index-container {
+  table {
+    th {
+      width: 20%;
+      @include sp {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------
+	%staff
+--------------------------------------------------------*/
+
+#staff-single-container {
+  .mod-title-standard {
+    .title {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+/*--------------------------------------------------------
+	%404
+--------------------------------------------------------*/
+
+#error-404-container {
+  .mod-title-standard {
+    background: $main-color;
+    .title {
+      height: 200px;
+    }
+  }
+}
+
+/*--------------------------------------------------------
+	%clearfix
+--------------------------------------------------------*/
+
+.clearfix::after,
+ul#instafeed::after {
+  content: "";
+  display: table;
+  clear: both;
+}

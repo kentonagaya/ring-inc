@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/*----------------------------------------------------
+	%structure
+----------------------------------------------------*/
+
+#wpfooter {
+	display: none;
+}
+
+.content-wrap {
+	box-sizing: border-box;
+	padding: 8.0rem 2.0rem;
+}
+
+.container {
+	width: 60.0rem;
+	margin: 0 auto;
+}
+
+.c-btn {
+	background-color: #0073aa;
+	border: 1px solid #0073aa;
+	border-radius: 10px;
+}
+
+/*----------------------------------------------------
+	%preference-table
+----------------------------------------------------*/
+
+.preference-table {
+	border-collapse:collapse;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.preference-table tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.preference-table tr:last-child {
+	border-bottom: none;
+}
+
+.preference-table th,
+.preference-table td {
+	padding: 1.0rem 2.0rem;
+	text-align: left;
+	background-color: #fff;
+}
+
+.preference-table td {
+	text-align: right;
+}
+
+/*----------------------------------------------------
+	%toggle-button
+----------------------------------------------------*/
+
+.toggle-button {
+	margin: 0;
+	display: inline-block;
+	position: relative;
+	width: 60px;
+	height: 30px;
+	border-radius: 50px;
+	background-color: #dddddd;
+	cursor: pointer;
+	transition: background-color .4s;
+}
+
+.toggle-button:has(:checked) {
+	background-color: #4bd865;
+}
+
+.toggle-button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+	background-color: #fff;
+	content: '';
+	transition: left .4s;
+}
+
+.toggle-button:has(:checked)::after {
+	left: 30px;
+}
+
+.toggle-button input {
+	display: none;
+}
+
+/*----------------------------------------------------
+	%form
+----------------------------------------------------*/
+
+input[type="submit"],
+input[type="button"] {
+	-webkit-box-sizing: content-box;
+	-webkit-appearance: button;
+	appearance: button;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+	display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+	outline-offset: -2px;
+}
+
+button::focus,
+input::focus { outline:0; }
+
+/* %basic-settings */
+
+input::placeholder,
+textarea::placeholder {
+	color: #aaa !important;
+}
+input::-ms-input-placeholder {
+	color: #aaa !important;
+}
+input::-ms-input-placeholder {
+	color: #aaa !important;
+}
+
+input,
+textarea {
+	font-size: 1.4rem;
+	line-height: 1.8em;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+input[ type="text" ],
+input[ type="email" ],
+input[ type="tel" ],
+input[ type="date" ],
+textarea  {
+	box-sizing: border-box;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+}
+input[ type="text"]:hover,
+input[ type="email"]:hover,
+input[ type="tel"]:hover,
+input[ type="date"]:hover {
+	background-color: #FAFAFA;
+	border: 1px solid #ddd;
+}
+input[ type="text"].size-m,
+input[ type="email"].size-m,
+input[ type="tel"].size-m,
+input[ type="date"].size-m {
+	width: 150px;
+}
+input[ type="text"].error,
+input[ type="email"].error,
+input[ type="tel"].error,
+input[ type="date"].error {
+	background-color: #FFE6E6;
+	border: 1px solid #f00;
+}
+
+input[ type="date" ] {
+	width: auto;
+}
+
+input[ type="file" ] {
+	width: auto;
+}
+
+textarea {
+	height: 200px;
+}
+
+form select {
+	margin: 1px 0;
+	padding: 0 10px;
+	height: 36px;
+	border: 1px solid #ddd;
+	min-width: 40%;
+}
+form select	option {
+	padding: 5px;
+}
