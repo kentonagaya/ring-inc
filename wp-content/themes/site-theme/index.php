@@ -110,38 +110,22 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="block mbcut">
 						<p class="section-more center"><a href="<?php bloginfo('url');?>/company/" class="button bc-ghost">会社案内へ<i class="fas fa-chevron-right"></i></a></p>
 					</div>
-
 				</div>
-
 			</section>
-
-
 			<section class="page-section bg-cover bg-atfix" id="top-service">
-
 				<div class="contents fadeup white-text"><!-- contents -->
-
 					<div class="hgroup">
 						<div class="mod-contents-header">
 							<p class="header-title font-designed center">SERVICE</p>
 							<h2 class="subtitle center">事業案内</h2>
 						</div>
 					</div>
-
 					<div class="block">
 						<div class="mod-clm3 sp-clear">
 							<ul class="eq-height">
-								<li class="list-cont">
-									<div class="list-inner texts">
-										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-resources.jpg" alt="人材紹介"></p>
-										<h3 class="heading04 center">人材紹介</h3>
-										<p class="mb30 item-eq-height">豊富な情報力をもって有能で即戦力となる人材をご紹介致します。企業様の経営方針や採用状況を理解し、事業戦略に沿う候補者をご紹介させて頂きます。</p>
-										<p class="section-more center"><a href="<?php bloginfo('url');?>/resources/" class="button">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
-									</div>
-								</li>
 								<li class="list-cont">
 									<div class="list-inner texts">
 										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-nursinghome.jpg" alt="高齢者トータルサポート"></p>
@@ -158,30 +142,29 @@
 										<p class="section-more center"><a href="<?php bloginfo('url');?>/realestate/" class="button mbcut">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
 									</div>
 								</li>
+								<li class="list-cont">
+									<div class="list-inner texts">
+										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-resources.jpg" alt="人材紹介"></p>
+										<h3 class="heading04 center">人材紹介</h3>
+										<p class="mb30 item-eq-height">豊富な情報力をもって有能で即戦力となる人材をご紹介致します。企業様の経営方針や採用状況を理解し、事業戦略に沿う候補者をご紹介させて頂きます。</p>
+										<p class="section-more center"><a href="<?php bloginfo('url');?>/resources/" class="button">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
-
 					
-
 				</div>
-
 			</section>
-
 			
-
-
 			<section class="page-section bg-light" id="top-news">
-
 				<div class="contents fadeup"><!-- contents -->
-
 					<div class="hgroup">
 						<div class="mod-contents-header">
 							<p class="header-title font-designed center">NEWS</p>
 							<h2 class="subtitle center">お知らせ</h2>
 						</div>
 					</div>
-
 					<div class="block">
 						<div class="mod-arc-list-2">
 							<ul>

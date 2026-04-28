@@ -155,7 +155,7 @@
 							</div>
 							<div class="texts-cont texts">
 								<h3 class="heading03"><span class="step font-designed">step<em>03</em></span> 土地調査</h3>
-								<p>専任の宅地建物取引氏にて土地調査を実施いたします。
+								<p>専任の宅地建物取引士にて土地調査を実施いたします。
 								調査結果が上がり次第、ご報告させていただきます。気になる点や内容などございましたらご説明させていただきます。</p>
 							</div>
 						</div>
