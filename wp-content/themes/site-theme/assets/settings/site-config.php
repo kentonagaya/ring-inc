@@ -22,17 +22,21 @@
 	$address_1_a		= '大阪市中央区北久宝寺町1-7-9';
 	$address_1_b		= '';
 	$phone_num_1		= '06-6224-0207';
-	$phone_num_2		= '0120-960-455';
 	$phone_letter_1		= '';
 	$fax_num_1			= '06-6224-0208';
 	$open_time_1 		= '9:00 〜 18:00';
 	$close_day_1		= '';
 
-	
 	$zip_2				= '〒542-0081';
 	$address_2_a		= '大阪市中央区南船場1-16-2';
+	$address_2_b		= '';
+	$phone_num_2		= '06-4300-3823';
+	$phone_letter_2		= '';
+	$fax_num_2			= '06-4300-3824';
+	$open_time_2 		= '9:00 〜 18:00';
+	$close_day_2		= '';
 
-	
+	$phone_num_f		= '0120-960-455';
 
 	# Copyright
 

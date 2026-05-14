@@ -46,8 +46,8 @@
 					<ul>
 						<li>
 							<h3>お電話から</h3>
-							<p class="fmod-contact-tel font-designed"><i class="fas fa-phone"></i><?php echo $phone_num_2;?></p>
-							<p class="sp-fmod-contact-tel"><a class="button font_designed" href="tel:<?php echo $phone_num_2;?>"><i class="fas fa-phone"></i><?php echo $phone_num_2;?></a></p>
+							<p class="fmod-contact-tel font-designed"><i class="fas fa-phone"></i><?php echo $phone_num_f;?></p>
+							<p class="sp-fmod-contact-tel"><a class="button font_designed" href="tel:<?php echo $phone_num_f;?>"><i class="fas fa-phone"></i><?php echo $phone_num_f;?></a></p>
 							<p class="fmod-contact-notice"><i class="far fa-clock"></i><?php echo $open_time_1;?><?php echo $close_day_1;?></p>
 						</li>
 						<li>
@@ -70,18 +70,39 @@
 
 						<p class="footer-name"><?php echo $site_name;?></p>
 
-						<address><i class="fas fa-map-marker-alt"></i><?php echo $zip_1;?> <?php echo $address_1_a;?> <br class="sp-br"><?php echo $address_1_b;?></address>
+						<div class="footer-offices">
+
+							<div class="footer-office">
+								<p class="office-label">本社</p>
+								<address><i class="fas fa-map-marker-alt"></i><?php echo $zip_1;?> <?php echo $address_1_a;?> <br class="sp-br"><?php echo $address_1_b;?></address>
 
 <?php if( is_pc()|is_tb() ){ ?>
-						<p class="tel"><i class="fas fa-phone"></i><?php echo $phone_num_1;?>&emsp;<i class="fas fa-fax"></i><?php echo $fax_num_1;?></p>
+								<p class="tel"><i class="fas fa-phone"></i><?php echo $phone_num_1;?>&emsp;<i class="fas fa-fax"></i><?php echo $fax_num_1;?></p>
 <?php };?>
 
 <?php if( is_sp() ){ ?>
-						<p class="tel"><a class="button radius" href="tel:<?php echo $phone_num_2;?>"><i class="fas fa-phone"></i><?php echo $phone_num_2;?></a></p>
-						<p class="tel"><i class="fas fa-fax"></i><?php echo $fax_num_1;?></a></p>
+								<p class="tel"><a class="button radius" href="tel:<?php echo $phone_num_f;?>"><i class="fas fa-phone"></i><?php echo $phone_num_f;?></a></p>
+								<p class="tel"><i class="fas fa-fax"></i><?php echo $fax_num_1;?></p>
 <?php };?>
 
-						<p class="opentime"><i class="far fa-clock"></i>営業時間：<?php echo $open_time_1;?><?php echo $close_day_1;?></p>
+							</div>
+
+							<div class="footer-office">
+								<p class="office-label">営業所</p>
+								<address><i class="fas fa-map-marker-alt"></i><?php echo $zip_2;?> <?php echo $address_2_a;?><?php if( $address_2_b !== '' ){ ?> <br class="sp-br"><?php echo $address_2_b; } ?></address>
+
+<?php if( is_pc()|is_tb() ){ ?>
+								<p class="tel"><i class="fas fa-phone"></i><?php echo $phone_num_2;?>&emsp;<i class="fas fa-fax"></i><?php echo $fax_num_2;?></p>
+<?php };?>
+
+<?php if( is_sp() ){ ?>
+								<p class="tel"><a class="button radius" href="tel:<?php echo $phone_num_2;?>"><i class="fas fa-phone"></i><?php echo $phone_num_2;?></a></p>
+								<p class="tel"><i class="fas fa-fax"></i><?php echo $fax_num_2;?></p>
+<?php };?>
+
+							</div>
+
+						</div><!-- // footer-offices -->
 
 					</div>
 

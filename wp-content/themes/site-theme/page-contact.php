@@ -103,7 +103,7 @@
 
 							<!--$$$$$$$$$$ MODここから $$$$$$$$$$-->
 							<div class="mod-contact-page-tel">
-								<p class="tel-num font-designed"><i class="fas fa-phone"></i><?php echo $phone_num_2;?></p>
+								<p class="tel-num font-designed"><i class="fas fa-phone"></i><?php echo $phone_num_f;?></p>
 								<p><i class="far fa-clock"></i>営業時間 <?php echo $open_time_1;?><?php echo $close_day_1;?></p>
 							</div><!-- // mod-contact-page-tel -->
 							<!--$$$$$$$$$$ MODここまで $$$$$$$$$$-->
@@ -111,7 +111,7 @@
 							<!--$$$$$$$$$$ MODここから $$$$$$$$$$-->
 							<div class="mod-contact-page-tel-sp">
 								<p><a class="button bc-ghost" href="<?php bloginfo('url');?>/contact/privacy/">個人情報保護方針</a></p>
-								<p><a class="button font-designed" href="tel:<?php echo $phone_num_2;?>"><i class="fas fa-phone"></i><?php echo $phone_num_2;?></a></p>
+								<p><a class="button font-designed" href="tel:<?php echo $phone_num_f;?>"><i class="fas fa-phone"></i><?php echo $phone_num_f;?></a></p>
 							</div><!-- // mod-contact-page-tel-sp -->
 							<!--$$$$$$$$$$ MODここまで $$$$$$$$$$-->
 

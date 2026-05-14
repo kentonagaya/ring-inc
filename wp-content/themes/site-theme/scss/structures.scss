@@ -361,6 +361,27 @@ body {
 	}
 }
 
+// footer offices
+.footer-offices {
+	display: flex;
+	flex-direction: row;
+	gap: 60px;
+
+	@include sp {
+		flex-direction: column;
+		gap: 30px;
+	}
+}
+
+.footer-office {
+	flex: 1;
+}
+
+.office-label {
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
 // pagetop
 .pagetop {
 	position: fixed;
