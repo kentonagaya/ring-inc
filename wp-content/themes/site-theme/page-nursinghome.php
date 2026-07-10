@@ -16,7 +16,7 @@
 	define( 'CURRENTDIR', 'nursinghome' );	// ディレクトリ名
 	define( 'CURRENTPAGE', 'index' );	// ページ名
 	$dirname 		= '高齢者トータルサポート';
-	$subtitle 		= 'NURSING HOME';
+	$subtitle 		= 'TOTAL SUPPORT for SENIORS';
 
 	/* ページ専用CSS */
 	$css = '';
@@ -88,7 +88,6 @@
                                     <h3 class="heading03 underline center">「安心」を感じられる、心豊かな生活を見つける</h3>
                                     <p class="text">老人ホームにおける多くの専門性や特徴をニーズに応じて柔軟にご提案させていただくために、
 									無料出張相談を実施し、ご見学に同行いたします。ご希望エリア、ご予算、介護度、ご希望のサービス内容を正確に把握し、最適な施設をご提案させて頂きます。
-									ご見学日には、ご指定場所までお迎えに伺い、必要に応じては介護タクシーも手配いたします。
 									利用者様、ご家族様と同じ視点から内容を確認させていただき、ご契約に至るまでしっかりと弊社のスタッフにてサポートを行います。
 </p>
                                 </div>
@@ -168,7 +167,7 @@
 								<p class="pic"><img src="<?php bloginfo('template_url');?>/images/flow01.jpg" alt="ご相談"></p>
 							</div>
 							<div class="texts-cont texts">
-								<h3 class="heading03"><span class="step font-designed">step<em>01</em></span> ご相談</h3>
+								<h3 class="heading03"><span class="step font-designed">step<em>01</em></span> ご相談・面談</h3>
 								<p>始めに電話・メール・HPでのお問い合わせをしていただきます。相談内容を伺い、面談日の調整を行います。
 									ご希望エリア、ご予算、介護度、希望のサービス内容を正確に把握し、ニーズに合った施設をご提案させていただきます。
 								</p>
@@ -189,7 +188,7 @@
 								<p class="pic"><img src="<?php bloginfo('template_url');?>/images/flow-n03.jpg" alt="ご入居決定"></p>
 							</div>
 							<div class="texts-cont texts">
-								<h3 class="heading03"><span class="step font-designed">step<em>03</em></span> ご入居決定</h3>
+								<h3 class="heading03"><span class="step font-designed">step<em>03</em></span> ご入居決定・施設面談</h3>
 								<p>ご見学を終え、最もニーズに合った施設がございましたらお申し込みを行います。
 									ご入居時における必要書類、役所の手続きも必要に応じ、対応させて頂きます。
 									ご契約までしっかりと弊社のスタッフにてサポートいたします。
@@ -201,7 +200,7 @@
 								<p class="pic"><img src="<?php bloginfo('template_url');?>/images/flow-n04.jpg" alt="ご入居後のフォロー"></p>
 							</div>
 							<div class="texts-cont texts">
-								<h3 class="heading03"><span class="step font-designed">step<em>04</em></span> ご入居後のフォロー</h3>
+								<h3 class="heading03"><span class="step font-designed">step<em>04</em></span> ご入居・ご入居後のフォロー</h3>
 								<p>実際にご入居いただき、ご感想をお聞かせください。
 									またその他相談事項がございましたら是非お気軽にご相談ください。
 									（引っ越し、不用品回収・処分、不動産売却、身元保証等）

@@ -15,8 +15,8 @@
 	/* ページ設定 */
 	define( 'CURRENTDIR', 'realestate' );	// ディレクトリ名
 	define( 'CURRENTPAGE', 'index' );	// ページ名
-	$dirname 		= '不動産紹介事業';
-	$subtitle 		= 'REALESTATE ';
+	$dirname 		= '不動産紹介';
+	$subtitle 		= 'REAL ESTATE ';
 
 	/* ページ専用CSS */
 	$css = '';
@@ -78,8 +78,9 @@
                     </div>
 
 					<div class="block">
-						<p class="text <?php echo switch_ua( 'center', 'center', '' );?>">経験豊富なスタッフが一人一人のニーズに合わせてきめ細やかな対応でサポート致します。売りたい時、買いたい時。貸したい時、借りたい時。<br>
-						その間に立ち、皆さまに満足していただける安心で安全な取引をかなえます。</p>
+						<p class="text <?php echo switch_ua( 'center', 'center', '' );?>">私たちは不動産の売買、売買仲介、賃貸仲介、物件管理、物件清掃を行っております。<br>
+							経験豊富なスタッフが一人一人のニーズに合わせてきめ細やかな対応でサポート致します。売りたい時、買いたい時。貸したい時、借りたい時。<br>
+							その間に立ち、皆さまに満足していただける安心で安全な取引をかなえます。</p>
 					</div>
 
 					<div class="mod-split-box">
@@ -146,7 +147,7 @@
 							<div class="texts-cont texts">
 								<h3 class="heading03"><span class="step font-designed">step<em>02</em></span> 相談</h3>
 								<p>日程を調整し、直接お話しさせていただきます。出張相談可能のため遠方のお客様もぜひご連絡ください。
-								売りたい、買いたい、賃貸したい、等ご要望・ご相談をお聞かせください。</p>
+								不動産の売買、売買仲介、賃貸仲介、物件管理、物件清掃等ご要望・ご相談をお聞かせください。</p>
 							</div>
 						</div>
 						<div class="mod-image-texts">

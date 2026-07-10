@@ -336,6 +336,35 @@ $font-desingned: 'Noto Sans JP', sans-serif;
   }
 }
 
+/*------------------------------
+	%workshop
+------------------------------*/
+
+#workshop-body {
+	.texts {
+		h2 {
+			margin-top: 60px;
+			@include sp {
+				margin-top: 40px;
+			}
+		}
+		> h2:first-child {
+			margin-top: 0;
+		}
+		ul {
+			margin-bottom: 40px;
+			li {
+				margin-bottom: 10px;
+			}
+		}
+		table,
+		.fig,
+		.mod-access-map {
+			margin-bottom: 40px;
+		}
+	}
+}
+
 /*--------------------------------------------------------
 	%404
 --------------------------------------------------------*/
