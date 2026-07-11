@@ -177,15 +177,15 @@ html {
 }
 
 * {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: normal;
     font-style: normal
 }
 
 body {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 15px;
+    font-size: 1.5rem;
     *font-size: small;
     *font: x-small;
     line-height: 1
@@ -220,7 +220,6 @@ html #wpadminbar {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Lato, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     background-color: #fafafa;
     color: #333
 }
@@ -466,12 +465,12 @@ body object a {
 
 .contents-container.has-side table th,
 .contents-container.has-side table td {
-    font-size: 1.4rem
+    font-size: 1.5rem
 }
 
 .contents-container.has-side dl dt,
 .contents-container.has-side dl dd {
-    font-size: 1.4rem
+    font-size: 1.5rem
 }
 
 .footer-wrap {
@@ -487,8 +486,8 @@ body object a {
 
 .copyright-wrap small {
     color: #fff;
-    font-size: 1.2rem;
-    line-height: 1.2em
+    font-size: 1.1rem;
+    line-height: 1.1em
 }
 
 @media screen and (max-width: 767px) {
@@ -577,6 +576,12 @@ body object a {
     margin-right: 20px
 }
 
+@media screen and (max-width: 767px) {
+    .mod-header-gnav .logo-part .header-logo {
+        margin-right: 12px
+    }
+}
+
 .mod-header-gnav .logo-part .header-logo img {
     height: 55px
 }
@@ -584,6 +589,20 @@ body object a {
 @media screen and (max-width: 767px) {
     .mod-header-gnav .logo-part .header-logo img {
         height: 30px
+    }
+}
+
+.header-company-name a {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .header-company-name a {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
     }
 }
 
@@ -636,7 +655,7 @@ body object a {
     display: inline-block;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold
 }
 
@@ -690,7 +709,8 @@ body object a {
 
 .mod-footer-standard .profile-part .footer-name {
     font-size: 2.2rem;
-    margin-bottom: 10px
+    margin-bottom: 16px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
@@ -699,8 +719,17 @@ body object a {
     }
 }
 
+.mod-footer-standard .profile-part .footer-office {
+    margin-bottom: 16px;
+}
+
+.mod-footer-standard .profile-part .footer-office .office-label {
+    font-size: 1.8rem;
+    margin-bottom: 10px
+}
+
 .mod-footer-standard .profile-part address {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.5em;
     margin-bottom: 10px
 }
@@ -759,7 +788,7 @@ body object a {
     margin: 0 1% 10px 0;
     padding-left: 15px;
     width: 26.33%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.4em;
     text-decoration: none;
     vertical-align: top;
@@ -788,7 +817,7 @@ body object a {
         width: 100%;
         text-align: left;
         border-bottom: 1px solid #fff;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         position: relative;
         color: #333;
         -webkit-box-sizing: border-box;
@@ -1150,7 +1179,7 @@ body.drawer-open .mod-gnav-sp .drawer-menu-container h3 {
     padding: 15px;
     border-top: 1px solid #ccc;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     position: relative;
     background: #fff;
     font-weight: bold
@@ -1766,7 +1795,7 @@ body.drawer-open .mod-gnav-sp .drawer-menu-container h3 {
 }
 
 .mod-contents-header .subtitle {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.4em;
     letter-spacing: 2px
@@ -1897,6 +1926,11 @@ input.button {
 .texts p a.button,
 p.text a.button {
     line-height: 1em
+}
+
+.texts strong,
+.texts b {
+	font-weight: bold;
 }
 
 .mod-pagenav-buttons li a.button {
@@ -3782,7 +3816,7 @@ dl.mod-dl02 dd:after {
     width: 250px;
     padding: 5px;
     margin-top: 10px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -4166,7 +4200,7 @@ article.single-article h4 {
 
 article.single-article h5 {
     margin-bottom: 10px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.5em
 }
@@ -4660,6 +4694,7 @@ textarea.error {
 .white-text .mod-contents-header h1,
 .white-text .mod-contents-header h2,
 .white-text .mod-contents-header h3,
+.white-text .mod-contents-header .header-title,
 .white-text .mod-contents-header .subtitle,
 .white-text .texts p,
 .white-text p.text {
@@ -4873,10 +4908,9 @@ p.text {
 }
 
 @media screen and (max-width: 767px) {
-
     .texts p,
     p.text {
-        font-size: 1.2rem !important
+        font-size: 1.3rem !important
     }
 }
 
@@ -5744,9 +5778,21 @@ table th {
 #workshop-body {
 	.texts {
 		h2 {
+			position: relative;
 			margin-top: 60px;
-			@include sp {
-				margin-top: 40px;
+			margin-bottom: 25px;
+			padding-bottom: 14px;
+			font-size: 2.6rem;
+			line-height: 1.4em;
+			border-bottom: 1px solid #0285fb;
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -1px;
+				width: 70px;
+				height: 3px;
+				background: #51b4d8;
 			}
 		}
 		> h2:first-child {
@@ -5758,12 +5804,49 @@ table th {
 				margin-bottom: 10px;
 			}
 		}
-		table,
-		.fig,
-		.mod-access-map {
+		table {
 			margin-bottom: 40px;
 		}
+		.fig {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 24px;
+            margin: 24px 80px 40px;
+			img,
+			iframe {
+				flex: 1 1 280px;
+				min-width: 0;
+				max-width: 100%;
+				border-radius: 5px;
+				box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+			}
+			img {
+				height: auto;
+			}
+			iframe {
+				height: 400px;
+				border: 0;
+			}
+		}
 	}
+}
+
+@media screen and (max-width: 767px) {
+    #workshop-body .texts h2 {
+        margin-top: 40px;
+        font-size: 2.0rem;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #workshop-body .texts .fig {
+        margin: 16px 0px 16px;
+        iframe {
+            height: 200px;
+        }
+    }
 }
 
 #error-404-container .mod-title-standard {

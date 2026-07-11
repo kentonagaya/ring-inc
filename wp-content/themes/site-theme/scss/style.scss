@@ -139,6 +139,20 @@ $font-desingned: 'Noto Sans JP', sans-serif;
     }
   }
 
+  .header-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .mod-gnav-in-header a {
+    font-weight: bold;
+  }
+
+  .mod-footer-standard .profile-part .footer-name {
+    font-weight: bold;
+  }
+
   #top-intro {
   }
 
@@ -147,6 +161,10 @@ $font-desingned: 'Noto Sans JP', sans-serif;
 
   #top-service {
     background-image: url(../images/top/bg-intro.jpg);
+  }
+
+  .header-title .subtitle {
+    color: #fff;
   }
 
   #top-news {

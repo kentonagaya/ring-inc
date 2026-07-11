@@ -5,13 +5,16 @@
 								会社案内
 							</a>
 							<a class="<?php if ( CURRENTDIR == 'nursinghome' ) { echo 'current'; } ?>" href="<?php bloginfo('url'); ?>/nursinghome/">
-								高齢者トータルサポート
+								高齢者<br>トータルサポート
 							</a>
 							<a class="<?php if ( CURRENTDIR == 'realestate' ) { echo 'current'; } ?>" href="<?php bloginfo('url'); ?>/realestate/">
-								不動産紹介事業
+								不動産紹介
 							</a>
 							<a class="<?php if ( CURRENTDIR == 'resources' ) { echo 'current'; } ?>" href="<?php bloginfo('url'); ?>/resources/">
 								人材紹介
+							</a>
+							<a class="<?php if ( CURRENTDIR == 'workshop' ) { echo 'current'; } ?>" href="<?php bloginfo('url'); ?>/workshop/">
+								就労支援施設
 							</a>
 
 							<a class="fn-only" href="<?php bloginfo('url'); ?>/news/">新着情報</a>
