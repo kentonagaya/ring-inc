@@ -1,6 +1,6 @@
 <?php
 /*--------------------------------------------------------------------------
-	Template Name: realestate-index
+	Template Name: senior-support-index
 ---------------------------------------------------------------------------*/
 
 	/* 共通設定読み込み */
@@ -13,10 +13,10 @@
 	$has_parent = false;
 
 	/* ページ設定 */
-	define( 'CURRENTDIR', 'realestate' );	// ディレクトリ名（WordPressのスラッグと合わせる）
+	define( 'CURRENTDIR', 'senior-support' );	// ディレクトリ名（WordPressのスラッグと合わせる）
 	define( 'CURRENTPAGE', 'index' );	// ページ名
-	$dirname 		= '不動産紹介';			// ヘッダー緑帯に出る日本語名
-	$subtitle 		= 'REAL ESTATE';			// ヘッダー緑帯に出る英語名
+	$dirname 		= '高齢者トータルサポート';			// ヘッダー緑帯に出る日本語名
+	$subtitle 		= 'TOTAL SUPPORT for SENIORS';			// ヘッダー緑帯に出る英語名
 
 	/* ページ専用CSS */
 	$css = '';
@@ -68,7 +68,7 @@
 
 		<main>
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-<?php the_content(); ?>
+<?php the_content(); ?><!-- WordPress編集画面の本文（各セクション）がここに入る -->
 <?php endwhile; endif; ?>
 <?php wp_reset_query(); ?>
 		</main>
