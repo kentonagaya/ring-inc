@@ -3070,6 +3070,31 @@ dl.mod-dl02 dd:after {
   margin: 0 10px 0 0;
 }
 
+.access-map-columns {
+	display: flex;
+	gap: 4%;
+}
+.access-map-columns .mod-access-map {
+	flex: 1;
+	min-width: 0;
+}
+.access-map-columns .access-map-title {
+	margin-bottom: 8px;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+	.access-map-columns {
+		display: block;
+	}
+	.access-map-columns .mod-access-map {
+		margin-bottom: 30px;
+	}
+	.access-map-columns .mod-access-map:last-child {
+		margin-bottom: 0;
+	}
+}
+
 .mod-access-route .access-heading {
   margin-bottom: 15px;
   color: $main-color;
@@ -5565,7 +5590,7 @@ table th {
 }
 
 #company-index-container #company-info .mod-even-layout .texts-part .text-inner {
-  padding: 80px;
+  padding: 64px;
 }
 
 @media screen and (max-width: 767px) {

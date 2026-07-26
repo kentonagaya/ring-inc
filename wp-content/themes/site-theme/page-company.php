@@ -117,7 +117,7 @@
 											</td>
 										</tr>
 										<tr>
-											<th>営業所</th>
+											<th>営業部</th>
 											<td>
 											<p><i class="fas fa-map-marker-alt"></i><?php echo $zip_2;?> <?php echo $address_2_a;?></p>
 											<p><i class="fas fa-phone"></i>06-4300-3823&emsp;<i class="fas fa-fax"></i>06-4300-3824</p></td>
@@ -212,12 +212,26 @@
 						</div>
 					</div>
 					<div class="block texts">
-						<div class="mod-access-map">
-							<address class="addr-text"><i class="fas fa-map-marker-alt"></i><?php echo $zip_1;?> <?php echo $address_1_a;?> <br class="sp-br"><?php echo $address_1_b;?></address>
-							<div class="part map-container">
-								<iframe class="gmap" width="600" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.jp/maps?q=<?php echo $address_1_a;?>&output=embed&t=m&z=16"></iframe>
+						<div class="access-map-columns">
+
+							<div class="mod-access-map">
+								<h3 class="access-map-title">本社</h3>
+								<address class="addr-text"><i class="fas fa-map-marker-alt"></i><?php echo $zip_1;?> <?php echo $address_1_a;?> <br class="sp-br"><?php echo $address_1_b;?></address>
+								<div class="part map-container">
+									<iframe class="gmap" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.jp/maps?q=<?php echo $address_1_a;?>&output=embed&t=m&z=16"></iframe>
+								</div>
+								<p class="right"><a class="button btn-small" href="https://maps.google.co.jp/maps/search/<?php echo $address_1_a;?>" target="_blank" rel="nofollow"><i class="fas fa-map-marked-alt"></i>Google Mapで見る</a></p>
 							</div>
-							<p class="right"><a class="button btn-small" href="https://maps.google.co.jp/maps/search/<?php echo $address_1_a;?>" target="_blank" rel="nofollow"><i class="fas fa-map-marked-alt"></i>Google Mapで見る</a></p>
+
+							<div class="mod-access-map">
+								<h3 class="access-map-title">営業部</h3>
+								<address class="addr-text"><i class="fas fa-map-marker-alt"></i><?php echo $zip_2;?> <?php echo $address_2_a;?></address>
+								<div class="part map-container">
+									<iframe class="gmap" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.0995624250922!2d135.50462947525313!3d34.677436584461624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e73d45e1b4e5%3A0xea66fae420f0a8c1!2z44CSNTQyLTAwODEg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65Y2X6Ii55aC077yR5LiB55uu77yR77yW4oiS77yS!5e0!3m2!1sja!2sjp!4v1785108505244!5m2!1sja!2sjp"></iframe>
+								</div>
+								<p class="right"><a class="button btn-small" href="https://maps.google.co.jp/maps/search/<?php echo $address_2_a;?>" target="_blank" rel="nofollow"><i class="fas fa-map-marked-alt"></i>Google Mapで見る</a></p>
+							</div>
+
 						</div>
 					</div>
 					<!--<div class="block">
