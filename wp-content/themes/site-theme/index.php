@@ -131,7 +131,7 @@
 									<div class="list-inner texts">
 										<p class="pic"><img src="<?php bloginfo('template_url');?>/images/top-nursinghome.jpg" alt="高齢者トータルサポート"></p>
 										<h3 class="heading04 center">高齢者トータルサポート</h3>
-										<p class="mb30 item-eq-height">医療現場で勤務経験のある専門スタッフが在住しており、専門的な相談が可能です。お客様のニーズに応じて心安らぐ、最適な施設のご紹介をさせて頂きます。</p>
+										<p class="mb30 item-eq-height">医療現場で勤務経験のある専門スタッフが常駐しており、専門的な相談が可能です。お客様のニーズに応じて心安らぐ、最適な施設のご紹介をさせて頂きます。</p>
 										<p class="section-more center"><a href="<?php bloginfo('url');?>/senior-support/" class="button">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
 									</div>
 								</li>

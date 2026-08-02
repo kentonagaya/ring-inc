@@ -13,14 +13,6 @@ if( $page_meta_d !== '' ) {?>
 <meta name="description" content="<?php bloginfo( 'description' ); ?>">
 <?php };?>
 <?php
-// META KEYWORDS
-//------------------------------------------------------------------------------
-if( $page_meta_k !== '' ) {?>
-<meta name="keywords" content="<?php echo $page_meta_k;?>">
-<?php } elseif( $meta_keywords !== '' ) { ?>
-<meta name="keywords" content="<?php echo $meta_keywords;?>">
-<?php };?>
-<?php
 // META OG
 //------------------------------------------------------------------------------?>
 <meta property="og:locale" content="ja_JP">

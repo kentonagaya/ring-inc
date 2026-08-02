@@ -133,7 +133,7 @@
 
 	</footer>
 
-	<div class="pagetop"><a href=".container"><i class="fas fa-arrow-up"></i></a></div>
+	<div class="pagetop"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
 
 </div><!-- // contentainer -->
 <?php wp_footer();?>
