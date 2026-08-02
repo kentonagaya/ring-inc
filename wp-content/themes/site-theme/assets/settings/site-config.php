@@ -44,7 +44,6 @@
 	$copyright_issue	= ''; // Copyrightの発行年 空白の場合は当年のみを自動表示
 
 	## SEO用設定
-	$meta_keywords 		= ''; // meta keywords は出力廃止（SEO効果なし）。comingsoon.php が参照するため変数のみ残す
 	$fb_appID			= ''; // Facebook AppID がある場合
 
 	## Google Analytics は ga.phpを編集してください
