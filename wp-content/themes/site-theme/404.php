@@ -59,7 +59,7 @@
 				<div class="contents"><!-- contents -->
 
 					<div class="hgroup">
-						<h1 class="heading03 center">お探しのページは表示できませんでした</h1>
+						<h2 class="heading03 center">お探しのページは表示できませんでした</h2>
 					</div>
 					<div class="block">
 						<script>

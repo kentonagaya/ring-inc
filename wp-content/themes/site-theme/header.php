@@ -42,7 +42,11 @@
 								<?php endif;?>
 							</a>
 						</p>
+						<?php if( is_home() || is_front_page() ): // 下層はページタイトル側をh1にするためサイト名はpに ?>
 						<h1 class="header-company-name"><a href="<?php bloginfo('url'); ?>/<?php echo $top_dir;?>">株式会社リング</a></h1>
+						<?php else: ?>
+						<p class="header-company-name"><a href="<?php bloginfo('url'); ?>/<?php echo $top_dir;?>">株式会社リング</a></p>
+						<?php endif; ?>
 					</div>
 
 					<div class="modules-part">

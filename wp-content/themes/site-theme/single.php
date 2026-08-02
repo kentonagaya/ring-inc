@@ -70,7 +70,7 @@
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<div class="page-title">
-						<h1 class="heading01"><?php the_title();?></h1>
+						<h2 class="heading01"><?php the_title();?></h2>
 					</div>
 
 					<div class="block">

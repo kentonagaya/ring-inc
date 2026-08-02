@@ -72,7 +72,7 @@
 				<div class="contents"><!-- contents -->
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title center">MESSAGE</h1>
+							<h2 class="header-title center">MESSAGE</h2>
 							<p class="subtitle font-designed center">メッセージ</p>
 						</div>
 					</div>
@@ -90,7 +90,7 @@
 				<div class="contents"><!-- contents -->
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title center">VOICES</h1>
+							<h2 class="header-title center">VOICES</h2>
 							<p class="subtitle font-designed center">スタッフの声</p>
 						</div>
 					</div>
@@ -138,7 +138,7 @@
 				<div class="contents"><!-- contents -->
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title center">ADMISSIONS</h1>
+							<h2 class="header-title center">ADMISSIONS</h2>
 							<p class="subtitle font-designed center">採用情報</p>
 						</div>
 					</div>
@@ -323,7 +323,7 @@ function getFiscalYearOfToday($start_date='04/01'){
 				<div class="contents"><!-- contents -->
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title center">FLOW</h1>
+							<h2 class="header-title center">FLOW</h2>
 							<p class="subtitle font-designed center">採用までの流れ</p>
 						</div>
 					</div>

@@ -75,7 +75,7 @@
 				<div class="contents"><!-- contents -->
 
 					<div class="block">
-						<h1 class="heading01">検索結果</h1>
+						<h2 class="heading01">検索結果</h2>
 					</div>
 
 <?php

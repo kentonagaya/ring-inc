@@ -72,7 +72,7 @@
 				<div class="contents"><!-- contents -->
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title center font-designed">ABOUT</h1>
+							<h2 class="header-title center font-designed">ABOUT</h2>
 							<p class="subtitle font-designed center">施設紹介</p>
 						</div>
 					</div>

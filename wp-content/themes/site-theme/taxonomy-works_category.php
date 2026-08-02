@@ -70,7 +70,7 @@
 			<section class="page-section">
 				<div class="contents"><!-- contents -->
 					<div class="page-title">
-						<h1 class="heading01">［<?php single_tag_title(); ?>］<span class="supple">の実績一覧</span></h1>
+						<h2 class="heading01">［<?php single_tag_title(); ?>］<span class="supple">の実績一覧</span></h2>
 						<?php echo $tag;?>
 					</div>
 					<div class="block">

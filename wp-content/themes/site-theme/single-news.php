@@ -68,7 +68,7 @@
 				<article class="contents single-article">
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 					<div class="page-title">
-						<h1 class="heading01"><?php the_title();?></h1>
+						<h2 class="heading01"><?php the_title();?></h2>
 					</div>
 					<div class="block">
 						<p class="date right"><i class="far fa-calendar-alt"></i><time datetime="<?php echo the_time('Y-m-d');?>"><?php echo the_time('Y-m-d');?></time></p>

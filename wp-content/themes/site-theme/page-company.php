@@ -72,7 +72,7 @@
 				<div class="contents block"><!-- contents -->
 					<div class="hgroup">
 						<div class="mod-contents-header mbcut">
-							<h1 class="header-title center font-designed">MESSAGE</h1>
+							<h2 class="header-title center font-designed">MESSAGE</h2>
 							<p class="subtitle font-designed center">ご挨拶</p>
 						</div>
 					</div>
@@ -95,7 +95,7 @@
 				<article class="contents">
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title center font-designed">COMPANY INFO</h1>
+							<h2 class="header-title center font-designed">COMPANY INFO</h2>
 							<p class="subtitle font-designed center">会社概要</p>
 						</div>
 					</div>
@@ -169,7 +169,7 @@
 				<div class="contents narrow-contents">
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title center">HISTORY</h1>
+							<h2 class="header-title center">HISTORY</h2>
 							<p class="subtitle font-designed center">沿革</p>
 						</div>
 					</div>
@@ -208,7 +208,7 @@
 				<div class="contents"><!-- contents -->
 					<div class="hgroup">
 						<div class="mod-contents-header">
-							<h1 class="header-title center font-designed">ACCESS MAP</h1>
+							<h2 class="header-title center font-designed">ACCESS MAP</h2>
 							<p class="subtitle font-designed center">アクセスマップ</p>
 						</div>
 					</div>

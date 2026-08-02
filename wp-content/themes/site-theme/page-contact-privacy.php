@@ -72,7 +72,7 @@
 				<div class="contents"><!-- contents -->
 
 					<div class="page-title">
-						<h1 class="heading01">個人情報保護方針</h1>
+						<h2 class="heading01">個人情報保護方針</h2>
 					</div>
 					<div class="block">
 						<div class="part texts">
