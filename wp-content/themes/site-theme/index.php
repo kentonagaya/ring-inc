@@ -125,7 +125,7 @@
 						</div>
 					</div>
 					<div class="block">
-						<div class="mod-clm3 sp-clear">
+						<div class="mod-clm4 sp-clear">
 							<ul class="eq-height">
 								<li class="list-cont">
 									<div class="list-inner texts">
@@ -149,6 +149,14 @@
 										<h3 class="heading04 center">人材紹介</h3>
 										<p class="mb30 item-eq-height">豊富な情報力をもって有能で即戦力となる人材をご紹介致します。企業様の経営方針や採用状況を理解し、事業戦略に沿う候補者をご紹介させて頂きます。</p>
 										<p class="section-more center"><a href="<?php bloginfo('url');?>/resources/" class="button">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
+									</div>
+								</li>
+								<li class="list-cont">
+									<div class="list-inner texts">
+										<p class="pic"><img src="https://ring-inc.com/wp-content/uploads/2026/06/IMG_0499.jpeg" alt="就労継続支援事業所（B型）すまいる"></p>
+										<h3 class="heading04 center">就労継続支援「すまいる」</h3>
+										<p class="mb30 item-eq-height">障がいをお持ちの方が、自分のペースで安心して働ける就労継続支援B型事業所「すまいる」を大阪市鶴見区で運営しております。一人ひとりに寄り添った支援を行います。</p>
+										<p class="section-more center"><a href="<?php bloginfo('url');?>/workshop/" class="button">詳しく見る<i class="fas fa-chevron-right"></i></a></p>
 									</div>
 								</li>
 							</ul>

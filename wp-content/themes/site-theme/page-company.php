@@ -83,7 +83,7 @@
 						<div class="texts-cont texts">
 							<h3 class="heading03">地域社会のコーディネーター</h3>
 							<p>株式会社リングは平成28年に医療職に特化した人材紹介サービス事業を主として誕生しました。<br>
-								現在は【高齢者トータルサポート】【有料職業紹介】【不動産】の3つの事業を軸としてお客様の人生に寄り添う【真心】と【おもてなし】のサービスを提供しております。
+								現在は【高齢者トータルサポート】【不動産紹介】【人材紹介】【就労継続支援】の4つの事業を軸としてお客様の人生に寄り添う【真心】と【おもてなし】のサービスを提供しております。
 								お客様と地域社会が求めるものを、お客様のパートナーとして、また地域社会のコーディネーターとして皆様に必要とされ、
 								愛される企業になるために社員一丸となり日々精進致します。</p>
 						</div>
@@ -117,7 +117,7 @@
 											</td>
 										</tr>
 										<tr>
-											<th>営業部</th>
+											<th>営業所</th>
 											<td>
 											<p><i class="fas fa-map-marker-alt"></i><?php echo $zip_2;?> <?php echo $address_2_a;?></p>
 											<p><i class="fas fa-phone"></i>06-4300-3823&emsp;<i class="fas fa-fax"></i>06-4300-3824</p></td>
@@ -142,6 +142,7 @@
 													<li>宅地建物取引業　売買・賃貸・仲介<br>大阪府知事(2)　第61103号</li>
 													<li>有料職業紹介業<br>厚生労働大臣27-ユ-302006</li>
 													<li>転職、就職支援サービス</li>
+													<li>就労継続支援事業所（B型）「すまいる」の運営</li>
 													<li>整理、リサイクル事業</li>
 												</ul>
 											</td>
@@ -224,7 +225,7 @@
 							</div>
 
 							<div class="mod-access-map">
-								<h3 class="access-map-title">営業部</h3>
+								<h3 class="access-map-title">営業所</h3>
 								<address class="addr-text"><i class="fas fa-map-marker-alt"></i><?php echo $zip_2;?> <?php echo $address_2_a;?></address>
 								<div class="part map-container">
 									<iframe class="gmap" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.0995624250922!2d135.50462947525313!3d34.677436584461624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e73d45e1b4e5%3A0xea66fae420f0a8c1!2z44CSNTQyLTAwODEg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65Y2X6Ii55aC077yR5LiB55uu77yR77yW4oiS77yS!5e0!3m2!1sja!2sjp!4v1785108505244!5m2!1sja!2sjp"></iframe>
